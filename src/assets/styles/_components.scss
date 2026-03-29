@@ -1,0 +1,64 @@
+.intro {
+  text-align: center;
+  padding: $section-padding 2rem;
+
+  &__title {
+    font-family: $heading-font;
+    font-size: 2.5rem;
+    margin-bottom: $base-spacing;
+    color: $primary-color;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    color: $secondary-color;
+  }
+}
+
+.gallery {
+  padding: $section-padding 2rem;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: $base-spacing;
+    color: $primary-color;
+  }
+
+  &__slider {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__slide {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+}
+
+.how-to-get, .recommendations {
+  padding: $section-padding 2rem;
+}
+
+.recommendations__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

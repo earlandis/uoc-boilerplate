@@ -6,14 +6,23 @@
 /**
  * Import dependencies
  */
-@use "dependencies";
+//@use "dependencies";
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@use "layouts/home";
+ // Importar parciales
+@import "variables";
+@import "dependencies";
+@import "functions";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "components";
+@import "utilities";
+//@use "layouts/home";
 
 /**
  * Do NOT include anything else in this file!
