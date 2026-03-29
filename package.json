@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
+    "aos": "^2.3.4",
     "swiper": "^12.1.3"
   }
 }

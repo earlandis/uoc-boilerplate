@@ -1,15 +1,13 @@
 // Colores
-$primary-color: #0077b6;       // Azul mediterráneo
-$secondary-color: #48cae4;     // Azul claro
 $accent-color: #fcbf49;        // Amarillo sol
-$background-color: #f1faee;    // Fondo general
+$background-color: #F0F0F0;    // Fondo general
 $text-color: #023047;          // Texto principal
 $footer-bg-color: #023047;
 $footer-text-color: #f1faee;
 
 // Tipografía
-$font-stack: "Helvetica, Arial, sans-serif";
-$heading-font: "Georgia, serif";
+$font-stack: "Roboto", "Helvetica", "Arial", sans-serif;
+$heading-font: "Bebas Neue", sans-serif;
 
 // Espaciados
 $base-spacing: 1rem;
@@ -18,3 +16,24 @@ $section-padding: 3rem;
 // Breakpoints
 $bp-phone: 600px;
 $bp-tablet: 900px;
+
+$color-pin-blue:        #3a8fbf;
+$color-pin-blue-light:  #b5d4f4;
+$color-pin-blue-text:   #0c447c;
+ 
+$color-overlay:         rgba(10, 30, 50, 0.30);
+$color-legend-bg:       rgba(10, 30, 50, 0.60);
+ 
+$map-max-width:         640px;
+$map-bg-fallback:       #0d1f2d;
+ 
+$popup-width:           190px;
+$popup-arrow-size:      6px;
+ 
+$transition-pin:        transform 0.15s ease;
+$transition-popup:      opacity 0.18s ease, transform 0.18s ease;
+ 
+$radius-lg:             12px;
+$radius-pill:           20px;
+ 
+$bp-sm:                 480px;

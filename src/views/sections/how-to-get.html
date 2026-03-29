@@ -1,6 +1,62 @@
 <section id="how-to-get" class="how-to-get">
   <h2 class="how-to-get__title">Cómo llegar</h2>
-  <p class="how-to-get__text">
-    Se puede acceder desde el puerto de Castellón mediante excursiones autorizadas. Revisa siempre la normativa de visitas.
-  </p>
+ 
+  <div class="how-to-get__frame">
+ 
+    <img
+      class="how-to-get__img"
+      id="mapImg"
+      src="/src/assets/images/mapa.png"
+      alt="Vista puntos salida"
+    />
+ 
+      <div class="how-to-get__pins" id="pinsLayer">
+        <div class="how-to-get__pin" id="pin-club-nautico" style="left:62%;top:75%">
+          <div class="how-to-get__popup" id="pop-club-nautico">
+            <button class="how-to-get__popup-close" data-id="club-nautico" aria-label="Cerrar">×</button>
+            <p class="how-to-get__popup-name">Club náutico de Castellón</p>
+            <p class="how-to-get__popup-desc">      Principal punto de salida hacia las Islas Columbretes. Desde aquí parten excursiones organizadas en barco con guías especializados.</p>
+            <span class="how-to-get__popup-tag how-to-get__popup-tag--blue">Salida principal</span>
+          </div>
+          <svg class="how-to-get__pin-icon" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="how-to-get__pin-body" d="M16 0C8.268 0 2 6.268 2 14c0 9.75 14 26 14 26S30 23.75 30 14C30 6.268 23.732 0 16 0z"/>
+            <circle class="how-to-get__pin-dot" cx="16" cy="14" r="5.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="how-to-get__pins" id="pinsLayer">
+        <div class="how-to-get__pin" id="pin-oropesa" style="left:70%;top:65%">
+          <div class="how-to-get__popup" id="pop-oropesa">
+            <button class="how-to-get__popup-close" data-id="oropesa" aria-label="Cerrar">×</button>
+            <p class="how-to-get__popup-name">Oropesa</p>
+            <p class="how-to-get__popup-desc">Punto alternativo de salida con excursiones en temporada alta. Ideal si te alojas en la zona norte de la costa.</p>
+            <span class="how-to-get__popup-tag how-to-get__popup-tag--blue">Salida estacional</span>
+          </div>
+          <svg class="how-to-get__pin-icon" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="how-to-get__pin-body" d="M16 0C8.268 0 2 6.268 2 14c0 9.75 14 26 14 26S30 23.75 30 14C30 6.268 23.732 0 16 0z"/>
+            <circle class="how-to-get__pin-dot" cx="16" cy="14" r="5.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="how-to-get__pins" id="pinsLayer">
+        <div class="how-to-get__pin" id="pin-burriana" style="left:56%;top:84%">
+          <div class="how-to-get__popup" id="pop-burriana">
+            <button class="how-to-get__popup-close" data-id="burriana" aria-label="Cerrar">×</button>
+            <p class="how-to-get__popup-name">Burriana</p>
+            <p class="how-to-get__popup-desc">      Puerto con opciones de excursiones privadas y actividades náuticas. Buena alternativa para grupos o experiencias personalizadas.</p>
+            <span class="how-to-get__popup-tag how-to-get__popup-tag--blue">Excursiones privadas</span>
+          </div>
+          <svg class="how-to-get__pin-icon" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="how-to-get__pin-body" d="M16 0C8.268 0 2 6.268 2 14c0 9.75 14 26 14 26S30 23.75 30 14C30 6.268 23.732 0 16 0z"/>
+            <circle class="how-to-get__pin-dot" cx="16" cy="14" r="5.5"/>
+          </svg>
+        </div>
+      </div>
+ 
+    </div>
+ 
+  </div>
+
 </section>

@@ -6,19 +6,3 @@
     @media (max-width: $bp-tablet) { @content; }
   }
 }
-
-// Botón
-@mixin button-style($bg, $color) {
-  background-color: $bg;
-  color: $color;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-
-  &:hover {
-    opacity: 0.85;
-  }
-}
