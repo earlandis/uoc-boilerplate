@@ -69,18 +69,14 @@
 
   // NAVBAR
   &__bar {
-    position: fixed;
-    top: 15px;
-    left: 25%;          
+    position: fixed;       
     width: 100%;         
     transform: none;
     z-index: 100;
-    max-width: 1200px;
     display: flex;
     justify-content: center;  
     align-items: center;
     padding: 0.5rem 2rem;
-    border-radius: 999px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
 
     &.scrolled {
