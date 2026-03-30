@@ -42,11 +42,45 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const toggle = document.querySelector('.header__toggle');
-const nav = document.querySelector('.header__nav');
 
+const nav = document.querySelector('.header__nav');
+const closeBtn = document.querySelector('.header__close');
+const links = document.querySelectorAll('.header__link');
+const headerBar = document.querySelector('.header__bar');
+const toggle = document.querySelector('.header__toggle');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    headerBar.classList.add('scrolled');
+  } else {
+    headerBar.classList.remove('scrolled');
+  }
+});
+
+// Abrir menú en tablet/móvil
 toggle.addEventListener('click', () => {
-  nav.classList.toggle('header__nav--active');
+  nav.classList.add('header__nav--active');
+  closeBtn.style.display = 'block'; // mostrar X solo al abrir
+});
+
+// Cerrar menú
+closeBtn.addEventListener('click', () => {
+  nav.classList.remove('header__nav--active');
+  closeBtn.style.display = 'none';
+});
+
+// Marcar item activo
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    links.forEach(l => l.parentElement.classList.remove('active'));
+    link.parentElement.classList.add('active');
+
+    // Cerrar menú en móvil
+    if (window.innerWidth <= 1024) {
+      nav.classList.remove('header__nav--active');
+      closeBtn.style.display = 'none';
+    }
+  });
 });
 
 
@@ -119,3 +153,5 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
   document.addEventListener('click', function(e) {
     if (!e.target.closest('.how-to-get__pin')) closeAll();
   });
+
+  

@@ -1,4 +1,19 @@
 <header class="header">
+  
+  <!-- MENU -->
+  <div class="header__bar">
+    <button class="header__toggle"><i class="fas fa-bars"></i></button>
+
+    <nav class="header__nav">
+      <button class="header__close"><i class="fas fa-times"></i></button>
+      <ul class="header__list">
+        <li class="header__item"><a href="#intro" class="header__link">Inicio</a></li>
+        <li class="header__item"><a href="#gallery" class="header__link">Galería</a></li>
+        <li class="header__item"><a href="#how-to-get" class="header__link">Cómo llegar</a></li>
+        <li class="header__item"><a href="#recommendations" class="header__link">Recomendaciones</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- SLIDER -->
   <div class="header__hero swiper">
@@ -6,7 +21,8 @@
 
       <div class="swiper-slide header__slide" style="background-image: url('/src/assets/images/columbretes7.jpg')">
         <div class="header__overlay"></div>
-        <h2 class="header__title" data-swiper-parallax="-300">Bienvenido</h2>
+        <h2 class="header__title" data-swiper-parallax="-300">
+          <p>Illes</p><p>Columbretes</p></h2>
       </div>
 
       <div class="swiper-slide header__slide" style="background-image: url('/src/assets/images/columbretes6.jpg')">
@@ -22,20 +38,6 @@
     </div>
 
     <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- BARRA -->
-  <div class="header__bar">
-    <button class="header__toggle"><i class="fas fa-bars"></i></button>
-
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item"><a href="#intro" class="header__link">Inicio</a></li>
-        <li class="header__item"><a href="#gallery" class="header__link">Galería</a></li>
-        <li class="header__item"><a href="#how-to-get" class="header__link">Cómo llegar</a></li>
-        <li class="header__item"><a href="#recommendations" class="header__link">Recomendaciones</a></li>
-      </ul>
-    </nav>
   </div>
 
 </header>

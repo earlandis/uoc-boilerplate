@@ -17,6 +17,7 @@
   text-align: center;
   padding: $section-padding 2rem;
   max-width: 50%;
+  margin: 2.5rem;
 
   &__title {
     font-family: $heading-font;
@@ -28,6 +29,7 @@
   &__description {
     font-size: 1.2rem;
     color: $text-color;
+    text-align: justify;
   }
 
   @include respond-to(tablet) {
@@ -67,6 +69,9 @@
     border-radius: 15px;
     height: 400px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d; // importante para efecto 3D
+    perspective: 1000px;          // profundidad
+    cursor: pointer;
 
     &:hover {
       transform: scale(1.05);
@@ -90,8 +95,8 @@
 
     .swiper-pagination-bullet {
       background: rgba(0,0,0,0.5);
-      width: 12px;
-      height: 12px;
+      width: 5px;
+      height: 5px;
       opacity: 1;
       transition: background 0.3s;
     }
@@ -123,24 +128,6 @@
       justify-content: center;
       align-items: center;
     }
-
-    &__pagination {
-      margin-top: 1rem;
-
-      .swiper-pagination-bullet {
-        background: rgba(0,0,0,0.5);
-        width: 6px;
-        height: 6px;
-        opacity: 1;
-        transition: background 0.3s;
-      }
-
-      .swiper-pagination-bullet-active {
-        background: $accent-color;
-      }
-    }
-
-
   }
 }
 
